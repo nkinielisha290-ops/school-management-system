@@ -50,6 +50,10 @@ python manage.py test
 | `DATABASE_URL` | Postgres URL, e.g. `postgres://user:pass@host:5432/db` | SQLite |
 | `DJANGO_SECURE_HSTS_SECONDS` | HSTS max-age in production | `0` |
 | `WEB_CONCURRENCY` | Gunicorn workers | `3` |
+| `EMAIL_HOST` / `EMAIL_PORT` | SMTP server (production only; console backend when `DJANGO_DEBUG=True`) | `localhost` / `587` |
+| `EMAIL_HOST_USER` / `EMAIL_HOST_PASSWORD` | SMTP credentials | empty |
+| `EMAIL_USE_TLS` | Use STARTTLS | `True` |
+| `DEFAULT_FROM_EMAIL` | Sender address | `webmaster@localhost` |
 
 ## Deployment
 
